@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fórum</title>
+  <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fórum Lacostekkkkkk</h1>
+    
+    <!-- Formulário de postagem -->
+    <form id="postForm">
+      <input type="text" id="username" placeholder="Seu nome" required>
+      <textarea id="content" placeholder="Escreva sua mensagem" required></textarea>
+
+      <!-- Botão de upload de arquivo estilizado -->
+      <div class="custom-file-input">
+        <input type="file" id="image" accept="image/*,video/*">
+        <label for="image" class="custom-file-label">Escolher arquivo</label>
+      </div>
+
+      <!-- Preview do arquivo -->
+      <div id="preview"></div>
+
+      <button type="submit">Postar</button>
+    </form>
+
+    <!-- Feed de postagens -->
+    <div id="feed"></div>
+  </div>
+
+  <script src="forum.js"></script>
+</body>
+</html>

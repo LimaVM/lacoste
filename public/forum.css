@@ -1,0 +1,186 @@
+/* Estilos globais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Estilos do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #888888;
+  background-color: #444444;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #417c0c;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Estilizando o botão de upload de arquivo */
+.custom-file-input {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.custom-file-input input[type="file"] {
+  display: none; /* Esconder o input de arquivo original */
+}
+
+.custom-file-label {
+  background-color: #007bff; /* Cor azul para o botão */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-label:hover {
+  background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+/* Botões */
+button {
+  background-color: #417c0c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #365f08;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Estilo do feed de postagens */
+#feed {
+  margin-top: 30px;
+}
+
+.post {
+  background-color: #444444;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: scale(1.02);
+}
+
+.post h3 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.post p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #dddddd;
+}
+
+.post small {
+  display: block;
+  margin-top: 10px;
+  color: #888888;
+  font-size: 12px;
+}
+
+/* Estilo das imagens */
+.post img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+}
+
+/* Estilo do preview */
+#preview img, #preview video {
+  max-width: 150px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #888;
+}
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .post h3 {
+    font-size: 18px;
+  }
+
+  .post p {
+    font-size: 14px;
+  }
+}

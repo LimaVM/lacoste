@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fórum de Autenticação</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h3>Responda as perguntas para acessar o fórum</h3>
+    <form id="authForm">
+      <label for="question1">1. Quem é o administrador supremo do grupo?</label>
+      <select id="question1">
+        <option value="">Selecione</option>
+        <option value="A">Hitler</option>
+        <option value="B">Douglas</option>
+        <option value="C">Erick</option>
+        <option value="D">Rowb</option>
+        <option value="E">Naeh</option>
+      </select>
+
+      <label for="question2">2. Qual é o animal da foto do grupo?</label>
+      <select id="question2">
+        <option value="">Selecione</option>
+        <option value="A">Elefante</option>
+        <option value="B">Jacaré</option>
+        <option value="C">Lontra</option>
+        <option value="D">Vespa</option>
+        <option value="E">Leão</option>
+      </select>
+
+      <label for="question3">3. O que o Alves é no grupo?</label>
+      <select id="question3">
+        <option value="">Selecione</option>
+        <option value="A">Inimigo</option>
+        <option value="B">Desgraçado</option>
+        <option value="C">Diabo</option>
+        <option value="D">Mendigo</option>
+        <option value="E">Estuprado</option>
+      </select>
+
+      <button type="submit">Verificar</button>
+      <p id="message"></p>
+    </form>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
